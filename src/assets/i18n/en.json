@@ -1,0 +1,12 @@
+{
+    "Logo": "Pet Project",
+    "Button": "Choose lenguage",
+    "Languages": {
+        "EN": "English",
+        "UA": "Ukrainian"
+    },
+    "Author": {
+        "Text": "Site was created by",
+        "Name": "Boiko Yurii"
+    }
+}

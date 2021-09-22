@@ -1,0 +1,14 @@
+<header class="header">
+    <div class="header-logo">
+        <a href="/">{{'Logo' | translate}}</a>
+    </div>
+    <div class="header-wrap">
+        <div class="header-wrap__drop" (clickOutside)="onClickedOutside($event)">
+            <button class="drop-button" (click)="dropClick()">{{'Button' | translate}}</button>
+            <ul class="drop-block" *ngIf="visible">
+                <li class="drop-item" (click)="translate.use('ua')" (click)="hiddenDrop()">UA</li>
+                <li class="drop-item" (click)="translate.use('en')" (click)="hiddenDrop()">EN</li>
+            </ul>
+        </div>
+    </div>
+</header>
