@@ -19,9 +19,7 @@ export class MainComponent implements OnInit {
 
   @HostListener("window:scroll", ["$event"])
   onWindowScroll() {
-    let pos = document.documentElement.scrollTop + document.documentElement.offsetHeight;
-    let max = document.documentElement.scrollHeight;
-    if (pos > max) {
+    if (document.documentElement.scrollTop >= 20) {
       this.getFullData();
     }
   }
